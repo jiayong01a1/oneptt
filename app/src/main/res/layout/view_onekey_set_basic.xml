@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/public_background"
+        android:padding="5dip"
+        android:layout_margin="@dimen/public_ten"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="小区名称："
+                />
+
+            <TextView
+                android:id="@+id/one_key_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:gravity="center"
+                android:paddingRight="@dimen/public_five"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电梯名称："/>
+
+            <TextView
+                android:id="@+id/one_key_ele"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:gravity="center"
+                android:paddingRight="@dimen/public_five"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/public_two"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼号码："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:gravity="center"
+                android:layout_weight="2">
+
+
+                    <EditText
+                        android:id="@+id/one_key_phone1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:hint="未设置"
+                        android:textColorHint="@color/login_et"
+                        android:textColor="@color/publicEdit"/>
+
+                    <ImageView
+                        android:id="@+id/mt_phone1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="@dimen/public_five"
+                        android:background="@mipmap/sanjiaoxing"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mt_phone1_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼号码："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/one_key_phone2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:hint="未设置"
+                    android:textColorHint="@color/login_et"
+                    android:textColor="@color/publicEdit"/>
+
+                <ImageView
+                    android:id="@+id/mt_phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/public_five"
+                    android:background="@mipmap/sanjiaoxing"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mt_phone2_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼号码："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/one_key_phone3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:hint="未设置"
+                    android:textColorHint="@color/login_et"
+                    android:textColor="@color/publicEdit"/>
+
+                <ImageView
+                    android:id="@+id/mt_phone3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/public_five"
+                    android:background="@mipmap/sanjiaoxing"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mt_phone3_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼号码："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/one_key_phone4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:hint="未设置"
+                    android:textColorHint="@color/login_et"
+                    android:textColor="@color/publicEdit"/>
+
+                <ImageView
+                    android:id="@+id/mt_phone4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/public_five"
+                    android:background="@mipmap/sanjiaoxing"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mt_phone4_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼号码："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/one_key_phone5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:hint="未设置"
+                    android:textColorHint="@color/login_et"
+                    android:textColor="@color/publicEdit"/>
+
+                <ImageView
+                    android:id="@+id/mt_phone5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/public_five"
+                    android:background="@mipmap/sanjiaoxing"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mt_phone5_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转呼等待："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/one_key_wait"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/publicEdit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/public_five"
+                    android:text="秒"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/one_key_wait_prompt"
+            style="@style/prompt_text"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:text="* 转呼等待时间为0或者10~90秒，默认30秒"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="通话时长："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/on_phone_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/publicEdit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/public_five"
+                    android:text="分钟"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/on_phone_time_prompt"
+            style="@style/prompt_text"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:text="* 单次通话时间为5~15分钟，默认5分钟"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_thirty"
+            android:layout_marginTop="@dimen/public_two"
+            android:background="@drawable/selector_login_editview"
+            android:orientation="horizontal"
+            android:padding="@dimen/public_two">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="轮询次数："/>
+
+            <TextView
+                android:id="@+id/one_key_query_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:gravity="center"
+                android:paddingRight="@dimen/public_five"
+                android:text="请选择轮询次数"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+   </ScrollView>
+</LinearLayout>

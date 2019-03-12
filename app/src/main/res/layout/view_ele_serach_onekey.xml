@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/realtime_ele_name"
+            android:textSize="18sp"/>
+
+        <onerfid.com.oneptt.widget.ClearEditText
+            android:id="@+id/search_ele_name"
+            style="@style/clear_edit_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/realtime_ele_address"
+            android:textSize="18sp"/>
+
+        <onerfid.com.oneptt.widget.ClearEditText
+            android:id="@+id/search_ele_address"
+            style="@style/clear_edit_text"/>
+
+    </LinearLayout>
+
+
+
+
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/realtime_ele_emcode"
+            android:textSize="18sp"/>
+
+        <com.onerfid.onerfidelevator.view.ClearEditText
+            android:id="@+id/search_ele_emcode"
+            android:paddingLeft="@dimen/public_five"
+            android:layout_marginTop="@dimen/public_five"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_login_editview"
+            android:textColorHint="@color/login_et"/>
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

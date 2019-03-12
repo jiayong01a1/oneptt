@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/public_text_size"
+                android:text="维保状态："/>
+
+            <RadioGroup
+                android:id="@+id/one_key_set_mt_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/one_key_set_mt_rb1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/public_ten"
+                    android:textSize="@dimen/public_text_size"
+                    android:drawableLeft="@drawable/mt_result_select"
+                    android:text="维保"
+                    android:textColor="@color/publicEdit"/>
+
+                <RadioButton
+
+                    android:id="@+id/one_key_set_mt_rb2"
+                    android:layout_marginTop="@dimen/public_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/public_ten"
+                    android:textSize="@dimen/public_text_size"
+                    android:drawableLeft="@drawable/mt_result_select"
+                    android:text="取消维保"
+                    android:textColor="@color/publicEdit"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/one_key_mt_ll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/public_ten"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/public_text_size"
+                android:text="维保时间："/>
+
+            <EditText
+                android:id="@+id/one_key_mt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/public_ten"
+                android:layout_weight="5"
+                android:background="@drawable/shape_textview_left"
+                android:paddingLeft="@dimen/public_five"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="@dimen/public_text_size"
+                android:text="120"
+                android:textColor="@color/publicEdit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_textview_right"
+                android:text="分钟"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/one_key_mt_prompt"
+            style="@style/prompt_text"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

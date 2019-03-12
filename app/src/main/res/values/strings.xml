@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">一键通</string>
+    <string name="loading">加载中...</string>
+
+    <string name="mqtt_server">Mqtt官网</string>
+    <string name="onedt_server">Onedt服务器</string>
+
+    <string name="login_name">输入账号</string>
+    <string name="login_pwd">输入密码</string>
+    <string name="login_btn">登 录</string>
+
+    <string name="login_input_error">用户名或密码为空</string>
+    <string name="login_error">用户名或密码错误</string>
+
+    <string name="login_net_error">网络连接失败</string>
+    <string name="one_key_bind">一键通绑定</string>
+    <string name="one_key_install">一键通安装</string>
+    <string name="one_key_set">一键通设置</string>
+    <string name="one_key_set_child">一键通子机名称设置</string>
+    <string name="one_key_name">一键通名称</string>
+
+    <string name="one_handle_bind">总机采集</string>
+    <string name="one_handle_change">总机更换</string>
+    <string name="one_handle_name">总机名称:</string>
+    <string name="one_handle_community">小区名称:</string>
+    <string name="one_handle_number">总机号码:</string>
+    <string name="one_handle_id">总机编号:</string>
+    <string name="one_handle_setnum">设置号码</string>
+    <string name="one_handle_setnum1">设置号码(必填)</string>
+
+    <string name="one_key_elevator">当前电梯:</string>
+    <string name="one_key_elevator_select">选择需要绑定的电梯</string>
+    <string name="one_key_name_select">输入名称:</string>
+    <string name="one_key_name_hint">请设置一键通设备名称</string>
+    <string name="one_key_number">输入号码:</string>
+    <string name="one_key_number_select">输入一键通SIM卡号</string>
+    <string name="one_key_id">一键通ID:</string>
+    <string name="one_key_id_show">点击采集按钮获取Id</string>
+
+    <string name="one_key_set_name">一键通:</string>
+    <string name="one_key_use_unit">使用单位:</string>
+    <string name="one_key_child_name1">子机名称1:</string>
+    <string name="one_key_child_name2">子机名称2:</string>
+    <string name="one_key_child_name3">子机名称3:</string>
+    <string name="one_key_child_name4">子机名称4:</string>
+    <string name="one_key_child_name5">子机名称5:</string>
+    <string name="one_key_child_name6">子机名称6:</string>
+    <string name="one_key_child_name7">子机名称7:</string>
+    <string name="one_key_child_name8">子机名称8:</string>
+
+    <string name="realtime_ele_name">电梯名称</string>
+    <string name="realtime_ele_address">电梯地址</string>
+    <string name="show_loading_msg">数据加载中</string>
+    <string name="show_loading_msg1">操作耗时1-2分钟，长时间未响应，请重试(确保输入号码能正常使用)</string>
+    <string name="change_result_detail">一键通：更新%1$d;台,成功%2$d;台</string>
+
+</resources>
